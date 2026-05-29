@@ -1,0 +1,5 @@
+*.bin
+sts-2.1.2/obj/
+sts-2.1.2/assess
+sts-2.1.2/data/
+sts-2.1.2/experiments/
