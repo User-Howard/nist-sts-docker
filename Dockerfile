@@ -5,7 +5,7 @@ RUN apk add --no-cache gcc make musl-dev
 
 WORKDIR /build
 COPY sts-2.1.2/ .
-RUN make -f makefile && \
+RUN mkdir -p obj && make -f makefile && \
     gcc -static -o assess obj/*.o -lm
 
 # runtime
